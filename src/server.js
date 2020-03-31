@@ -5,8 +5,7 @@ const server = express()
 
 const routes = require('./routes')
 
-require ('./database/db')
-
+require ('./config/database')
 server.use(cors())
 server.use(express.json())
 server.use(routes)
