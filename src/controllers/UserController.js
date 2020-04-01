@@ -70,6 +70,7 @@ module.exports = {
         const userExists = await User.findById(id)
 
         const { email, oldPassword } = req.body
+        
         if (email == !user.email) {
             const userExists = await User.findOne({ email:  email  })
 
